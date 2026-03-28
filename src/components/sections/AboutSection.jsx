@@ -54,7 +54,7 @@ const AboutSection = () => {
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 border-4 border-gray-800 bg-gray-900 transform transition-transform duration-500 hover:scale-[1.02]">
                 {/* Fallback avatar if hero.png is missing or generic. Replace src with your actual photo! */}
                 <img 
-                  src="/src/assets/hero.png" 
+                  src="assets/hero.png" 
                   alt="Ajit Paraskar" 
                   className="w-full h-full object-cover"
                   onError={(e) => {

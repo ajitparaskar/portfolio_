@@ -16,7 +16,7 @@ export const PROJECTS = [
     ],
     demo: 'https://music-recomendation-system-five.vercel.app/',
     github: 'https://github.com/Ajit-Paraskar/ai-music-recommendation',
-    image: '/src/assets/ai.png',
+    image: '/assets/ai.png',
     gradient: 'from-violet-500 via-purple-500 to-indigo-600',
   },
   {
@@ -34,7 +34,7 @@ export const PROJECTS = [
     ],
     demo: 'https://smart-knowledge-explorer.vercel.app',
     github: 'https://github.com/Ajit-Paraskar/smart-knowledge-explorer',
-    image : '/src/assets/kno.png',
+    image : '/assets/kno.png',
     gradient: 'from-blue-500 via-cyan-400 to-sky-500',
   },
   {
@@ -52,7 +52,7 @@ export const PROJECTS = [
     ],
     demo: 'https://zerodha-clone-ajit.vercel.app',
     github: 'https://github.com/Ajit-Paraskar/zerodha-clone',
-    image: '/src/assets/zeroda.png',
+    image: '/assets/zeroda.png',
     gradient: 'from-emerald-400 via-teal-500 to-green-600',
   },
 ]
