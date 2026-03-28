@@ -25,83 +25,56 @@ export const HIGHLIGHTS = [
   },
 ]
 
-// 🔹 Skills grouped by category (Main Skills Section)
 export const CATEGORIES = [
   {
-    id: 'frontend',
-    label: 'Frontend',
-    color: 'text-blue-400',
-    iconBg: 'bg-blue-500/10',
-    chipClass: 'bg-blue-500/10 text-blue-300 border border-blue-500/20',
+    id: 'development',
+    title: 'Development',
+    borderColor: 'border-cyan-400',
     skills: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'TypeScript',
-      'React',
-      'Tailwind CSS',
-      'Vite',
-    ],
+      { name: 'Flask', icon: 'flask', color: 'text-cyan-400' },
+      { name: 'FastAPI', icon: 'fastapi', color: 'text-cyan-400' },
+      { name: 'React.js', icon: 'react', color: 'text-cyan-400' },
+      { name: 'Node.js', icon: 'nodejs', color: 'text-cyan-400' },
+      { name: 'Express.js', icon: 'express', color: 'text-cyan-400' },
+      { name: 'JavaScript', icon: 'javascript', color: 'text-cyan-400' },
+      { name: 'HTML5', icon: 'html', color: 'text-cyan-400' },
+      { name: 'CSS3', icon: 'css', color: 'text-cyan-400' }
+    ]
   },
   {
-    id: 'backend',
-    label: 'Backend',
-    color: 'text-violet-400',
-    iconBg: 'bg-violet-500/10',
-    chipClass: 'bg-violet-500/10 text-violet-300 border border-violet-500/20',
+    id: 'programming',
+    title: 'Programming',
+    borderColor: 'border-red-400/80',
     skills: [
-      'Node.js',
-      'Express',
-      'REST APIs',
-      'Python',
-      'Flask',
-      'JWT Authentication',
-    ],
+      { name: 'Java', icon: 'java', color: 'text-cyan-400' },
+      { name: 'Python', icon: 'python', color: 'text-cyan-400' },
+      { name: 'C++', icon: 'cpp', color: 'text-cyan-400' },
+      { name: 'Data Structures', icon: 'datastructure', color: 'text-cyan-400' },
+      { name: 'Algorithms', icon: 'algorithm', color: 'text-cyan-400' }
+    ]
   },
   {
     id: 'database',
-    label: 'Database',
-    color: 'text-amber-400',
-    iconBg: 'bg-amber-500/10',
-    chipClass: 'bg-amber-500/10 text-amber-300 border border-amber-500/20',
+    title: 'Database & Tools',
+    borderColor: 'border-emerald-400',
     skills: [
-      'MongoDB',
-      'Redis',
-      'MySQL',
-      'PostgreSQL'
-    ],
+      { name: 'PostgreSQL', icon: 'database', color: 'text-cyan-400' },
+      { name: 'MySQL', icon: 'database', color: 'text-cyan-400' },
+      { name: 'Git', icon: 'git', color: 'text-cyan-400' },
+      { name: 'GitHub', icon: 'github', color: 'text-white' },
+      { name: 'VS Code', icon: 'vscode', color: 'text-cyan-400' }
+    ]
   },
   {
-    id: 'aiml',
-    label: 'AI / ML',
-    color: 'text-emerald-400',
-    iconBg: 'bg-emerald-500/10',
-    chipClass: 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/20',
+    id: 'softskills',
+    title: 'Soft Skills',
+    borderColor: 'border-yellow-400/80',
     skills: [
-      'Scikit-learn',
-      'Pandas',
-      'NumPy',
-      'OpenAI API',
-      'LangChain',
-      'TF-IDF',
-      'Cosine Similarity',
-    ],
-  },
-  {
-    id: 'tools',
-    label: 'Tools',
-    color: 'text-rose-400',
-    iconBg: 'bg-rose-500/10',
-    chipClass: 'bg-rose-500/10 text-rose-300 border border-rose-500/20',
-    skills: [
-      'Git',
-      'GitHub',
-      'vercel',
-      'render',
-      'Docker',
-      'VS Code',
-      'Postman',
-      'Figma',
-    ],
-  },
+      { name: 'Problem Solving', icon: 'bulb', color: 'text-cyan-400' },
+      { name: 'Communication', icon: 'chat', color: 'text-cyan-400' },
+      { name: 'Team Leadership', icon: 'users', color: 'text-cyan-400' },
+      { name: 'Time Management', icon: 'clock', color: 'text-cyan-400' },
+      { name: 'Critical Thinking', icon: 'brain', color: 'text-cyan-400' }
+    ]
+  }
 ]

@@ -4,139 +4,99 @@ import FadeIn from '@/components/layout/FadeIn'
 import { CATEGORIES } from '@/constants/skills'
 
 const ICONS = {
-  frontend: () => (
-    <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none"
-         stroke="currentColor" strokeWidth="1.6"
-         strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="5,7 2,10 5,13" />
-      <polyline points="15,7 18,10 15,13" />
-      <line x1="11" y1="5" x2="9" y2="15" />
-    </svg>
+  react: () => (
+    <svg viewBox="-11.5 -10.23174 23 20.46348" className="w-full h-full"><circle cx="0" cy="0" r="2.05" fill="currentColor" /><g stroke="currentColor" strokeWidth="1" fill="none"><ellipse rx="11" ry="4.2" /><ellipse rx="11" ry="4.2" transform="rotate(60)" /><ellipse rx="11" ry="4.2" transform="rotate(120)" /></g></svg>
   ),
-  backend: () => (
-    <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none"
-         stroke="currentColor" strokeWidth="1.6"
-         strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="2.5" width="16" height="4" rx="1.5" />
-      <rect x="2" y="8"   width="16" height="4" rx="1.5" />
-      <rect x="2" y="13.5" width="16" height="4" rx="1.5" />
-      <circle cx="5.5" cy="4.5"  r="0.8" fill="currentColor" stroke="none" />
-      <circle cx="5.5" cy="10"   r="0.8" fill="currentColor" stroke="none" />
-      <circle cx="5.5" cy="15.5" r="0.8" fill="currentColor" stroke="none" />
-    </svg>
+  nodejs: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full"><path d="M12 2l9 4.5v9L12 20l-9-4.5v-9L12 2z" /><path d="M12 2v9" /><path d="M12 11l9-4.5" /><path d="M12 11l-9-4.5" /></svg>
   ),
-  database: () => (
-    <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none"
-         stroke="currentColor" strokeWidth="1.6"
-         strokeLinecap="round" strokeLinejoin="round">
-      <ellipse cx="10" cy="5" rx="7" ry="2.5" />
-      <path d="M3 5v4.5c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5V5" />
-      <path d="M3 9.5v5c0 1.38 3.13 2.5 7 2.5s7-1.12 7-2.5v-5" />
-    </svg>
+  express: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full"><rect x="2" y="4" width="20" height="16" rx="2" ry="2" /><line x1="2" y1="10" x2="22" y2="10" /><line x1="2" y1="16" x2="22" y2="16" /><line x1="6" y1="13" x2="6.01" y2="13" /><line x1="6" y1="19" x2="6.01" y2="19" /></svg>
   ),
-  aiml: () => (
-    <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none"
-         stroke="currentColor" strokeWidth="1.6"
-         strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="10"  cy="10" r="2.2" />
-      <circle cx="3.5" cy="5.5" r="1.5" />
-      <circle cx="16.5" cy="5.5" r="1.5" />
-      <circle cx="3.5" cy="14.5" r="1.5" />
-      <circle cx="16.5" cy="14.5" r="1.5" />
-      <line x1="5"    y1="6"    x2="8"    y2="8.5" />
-      <line x1="15"   y1="6"    x2="12"   y2="8.5" />
-      <line x1="5"    y1="14"   x2="8"    y2="11.5" />
-      <line x1="15"   y1="14"   x2="12"   y2="11.5" />
-    </svg>
+  javascript: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M9 15c-1 0-1.5-.5-2-1" /><path d="M14 15c0 1 1.5 1 2 0v-4c0-1-1.5-1-2 0s-2 .5-2 1" /></svg>
   ),
-  tools: () => (
-    <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none"
-         stroke="currentColor" strokeWidth="1.6"
-         strokeLinecap="round" strokeLinejoin="round">
-      <path d="M14.8 3.2a4 4 0 00-5.1 5.4L3.5 14.8a1.5 1.5 0 002.1 2.1l6.2-6.2a4 4 0 005.4-5.1l-2.7 2.7-2-2 2.3-3.1z" />
-    </svg>
-  )
+  html: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full"><path d="M4 2l1.5 17L12 22l6.5-3L20 2z" /><path d="M9 7h8l-.5 5H9l.5 5 2.5 1 2.5-1 .2-2" /></svg>
+  ),
+  css: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full"><path d="M4 2l1.5 17L12 22l6.5-3L20 2z" /><path d="M9 7h6l-.5 4.5H9l.5 4.5 2.5 1 2.5-1 .3-3" /></svg>
+  ),
+  python: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full"><path d="M18 10h-6V4a2 2 0 0 0-4 0v6H4v4h6v6a2 2 0 0 0 4 0v-6h4v-4z" /></svg>
+  ),
+  git: () => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full"><circle cx="18" cy="18" r="3" /><circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M18 15V9a2 2 0 0 0-2-2H8" /><path d="M6 9v6" /></svg>
+  ),
+
+  // ✅ NEW (Flask + FastAPI using Python icon)
+  flask: () => ICONS.python(),
+  fastapi: () => ICONS.python(),
 }
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 24, scale: 0.96 },
-  show: { 
-    opacity: 1, 
-    y: 0, 
-    scale: 1,
-    transition: { type: 'spring', bounce: 0.3, duration: 0.8 } 
-  },
-}
+const SkillCard = ({ skill }) => {
+  const Icon = ICONS[skill.icon] || ICONS.python // ✅ safe fallback
 
-
-
-/* ── Card ────────────────────────────────────────────────────────────────────── */
-const CategoryCard = ({ id, label, color, iconBg, chipClass, skills, wide }) => {
-  const Icon = ICONS[id]
   return (
-  <motion.div
-    variants={cardVariants}
-    whileHover={{ y: -4, transition: { duration: 0.2 } }}
-    className={`bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col gap-4
-    hover:bg-white/10 hover:border-white/20 transition-all duration-300
-    ${wide ? 'sm:col-span-2 lg:col-span-1' : ''}`}>
-
-    {/* Header */}
-    <div className="flex items-center gap-3">
-      <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 ${iconBg}`}>
-        <span className={color}>{Icon && <Icon />}</span>
+    <motion.div
+      variants={{ hidden: { opacity: 0, y: 15 }, show: { opacity: 1, y: 0 } }}
+      whileHover={{ scale: 1.02 }}
+      className="flex items-center gap-3 bg-[#1e1e1e] hover:bg-[#2a2a2a] transition-colors py-2.5 px-3 rounded-md min-w-0"
+    >
+      <div className={`w-5 h-5 flex items-center justify-center shrink-0 ${skill.color}`}>
+        <Icon />
       </div>
-      <h3 className={`text-sm font-semibold ${color}`}>{label}</h3>
-    </div>
-
-    {/* Divider */}
-    <div className="h-px bg-white/10" />
-
-    {/* Skill chips */}
-    <div className="flex flex-wrap gap-2">
-      {skills?.map((s) => (
-        <span key={s} className={`text-xs font-medium px-2.5 py-1 rounded-full ${chipClass}`}>
-          {s}
-        </span>
-      ))}
-    </div>
+      <span className="text-[13px] sm:text-sm font-semibold text-gray-200 tracking-wide truncate">
+        {skill.name}
+      </span>
     </motion.div>
   )
 }
 
-/* ── Section ────────────────────────────────────────────────────────────────── */
-const SkillsSection = () => (
-  <section id="skills" className="relative py-28 bg-gray-950">
-    {/* Subtle top divider */}
-    <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-100" />
-    <Container>
-      <FadeIn>
-        <p className="text-xs font-semibold text-blue-400 tracking-[0.2em] uppercase mb-3">
-          Skills
-        </p>
-        <h2 className="text-4xl md:text-5xl font-extrabold font-serif tracking-tight text-white mb-3">
-          What I <span className="bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">work with</span>
-        </h2>
-        <p className="text-gray-400 text-lg mb-10 max-w-xl">
-          A snapshot of the technologies and tools I reach for when building things.
-        </p>
-      </FadeIn>
+const SkillsSection = () => {
+  return (
+    <section id="skills" className="relative py-24 sm:py-32 bg-[#0c0c0c] overflow-hidden">
 
-      {/* 1 col → 2 col (sm) → 3 col (lg)
-          Last card spans 2 cols on sm so it doesn't sit alone at half-width */}
-      <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
-        variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, margin: '-60px' }}
-      >
-        {CATEGORIES?.map((cat, i) => (
-          <CategoryCard key={cat.id} {...cat} wide={i === CATEGORIES.length - 1} />
-        ))}
-      </motion.div>
-    </Container>
-  </section>
-)
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+      <Container>
+        <FadeIn>
+          <div className="flex justify-center mb-16 sm:mb-24 px-4">
+            <div className="relative inline-flex items-center justify-center px-8 py-2 md:px-12 md:py-3">
+
+              <div className="absolute top-0 left-0 w-[50%] h-[60%] border-t-[3px] border-l-[3px] border-[#a855f7] rounded-tl-[20px] shadow-[[-2px_-2px_15px_rgba(168,85,247,0.5)]]"></div>
+
+              <div className="absolute bottom-0 right-0 w-[50%] h-[60%] border-b-[3px] border-r-[3px] border-[#a855f7] rounded-br-[20px] shadow-[2px_2px_15px_rgba(168,85,247,0.5)]"></div>
+
+              <h2 className="text-3xl md:text-5xl font-bold text-white relative z-10">
+                Skills
+              </h2>
+            </div>
+          </div>
+        </FadeIn>
+
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12"
+          variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
+          initial="hidden"
+          whileInView="show"
+        >
+          {CATEGORIES.map(cat => (
+            <motion.div key={cat.id}>
+              <h3 className="text-xl font-bold text-white mb-2">{cat.title}</h3>
+              <div className={`w-12 border-b-[3px] rounded-full mb-6 ${cat.borderColor}`} />
+
+              <div className="flex flex-col gap-[10px]">
+                {cat.skills.map(skill => (
+                  <SkillCard key={skill.name} skill={skill} />
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </Container>
+    </section>
+  )
+}
 
 export default SkillsSection

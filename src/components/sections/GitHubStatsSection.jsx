@@ -8,7 +8,7 @@ import FadeIn from '@/components/layout/FadeIn'
    ────────────────────────────────────────────────────────────────────── */
 const USERNAMES = {
   github: 'ajitparaskar',
-  leetcode: 'Invincible_Ajit',
+  leetcode: 'justajit',
   codeforces: 'ajitparaskar',
   gfg: 'ajitparaskar'
 }
